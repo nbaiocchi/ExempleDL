@@ -10,7 +10,7 @@
 
 LibSfml::LibSfml()
 {
-	window = new sf::RenderWindow(sf::VideoMode(1920, 1080), "Arcade 2019", sf::Style::Close | sf::Style::Resize);
+	window = new sf::RenderWindow(sf::VideoMode(1920, 1080), "Arcade", sf::Style::Close | sf::Style::Resize);
 	window->setActive(false);
 	window->clear();
 	font.loadFromFile("arial.ttf");
