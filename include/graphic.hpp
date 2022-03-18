@@ -8,6 +8,8 @@
 #ifndef GRAPHIC_HPP_
 #define GRAPHIC_HPP_
 
+#include "core.hpp"
+
 class GraphicDraw
 {
     public:
