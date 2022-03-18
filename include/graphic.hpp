@@ -13,6 +13,7 @@ class GraphicDraw
     public:
         virtual ~GraphicDraw() = default;
         virtual void drawText(float, float, std::string) = 0;
+        virtual int getKeyPress() = 0;
         virtual void clear() = 0;
         virtual void display() = 0;
 

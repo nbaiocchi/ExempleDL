@@ -31,10 +31,16 @@ Core::~Core()
 
 void Core::myGame()
 {
+    //char key;
+
     while (1)
     {
         mylibs->clear();
         mylibs->drawText(20, 90, "THIS IS A TEST");
+        if (mylibs->getKeyPress() == QUIT) {
+            delete mylibs;
+            return;
+        }
         mylibs->display();
     }
 }

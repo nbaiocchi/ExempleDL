@@ -18,6 +18,7 @@ class libNcurses : GraphicDraw
 		~libNcurses() override;
 
 		void drawText(float, float, std::string) override;
+		int getKeyPress() override;
 		void clear() override;
 		void display() override;
 

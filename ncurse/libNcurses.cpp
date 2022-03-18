@@ -25,6 +25,11 @@ void libNcurses::drawText(float y, float x, std::string str)
     mvprintw(y, x, str.c_str());
 }
 
+int libNcurses::getKeyPress()
+{
+    return (wgetch(window));
+}
+
 void libNcurses::display()
 {
     wrefresh(window);

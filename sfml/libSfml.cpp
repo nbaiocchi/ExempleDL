@@ -30,6 +30,17 @@ void LibSfml::drawText(float y, float x, std::string str)
     window->draw(text);
 }
 
+int LibSfml::getKeyPress()
+{
+    while (this->window->pollEvent(this->event)) {
+        if (event.type == sf::Event::KeyPressed) {
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::X))
+                return ((int)'x');
+        }
+    }
+    return 0;
+}
+
 void LibSfml::display()
 {
 	this->window->display();

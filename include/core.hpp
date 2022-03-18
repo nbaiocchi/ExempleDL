@@ -25,6 +25,9 @@ class Core
         Core(std::string);
         ~Core();
         void myGame();
+        enum keyBinding {
+            QUIT = 'x',
+        };
 
     private:
         GraphicDraw * mylibs;

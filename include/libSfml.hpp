@@ -19,6 +19,7 @@ class LibSfml : GraphicDraw
 		~LibSfml() override;
 
 		void drawText(float, float, std::string) override;
+		int getKeyPress() override;
 		void clear() override;
 		void display() override;
 
@@ -26,6 +27,7 @@ class LibSfml : GraphicDraw
 		sf::RenderWindow *window;
 		sf::Font font;
 		sf::Text text;
+		sf::Event event;
 };
 
 #endif /* !LIBSFML_HPP_ */
