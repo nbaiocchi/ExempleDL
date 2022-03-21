@@ -31,8 +31,6 @@ Core::~Core()
 
 void Core::myGame()
 {
-    //char key;
-
     while (1)
     {
         mylibs->clear();

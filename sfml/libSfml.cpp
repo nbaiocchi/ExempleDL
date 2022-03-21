@@ -34,7 +34,7 @@ int LibSfml::getKeyPress()
 {
     while (this->window->pollEvent(this->event)) {
         if (event.type == sf::Event::KeyPressed) {
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::X))
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
                 return ((int)'x');
         }
     }

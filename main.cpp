@@ -11,6 +11,7 @@ int main(int ac, char **av)
 {
     if (ac != 2)
         return (84);
+    // Make unique pointer
     Core *core = new Core(av[1]);
 
     core->myGame();

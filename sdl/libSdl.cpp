@@ -58,7 +58,7 @@ int LibSdl::getKeyPress()
 {
     SDL_Event event;
     while (SDL_PollEvent(&event)) {
-        if (event.key.keysym.sym == SDLK_x) {
+        if (event.key.keysym.sym == SDLK_ESCAPE) {
             return ((int)'x');
         }
 	}

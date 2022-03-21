@@ -27,7 +27,11 @@ void libNcurses::drawText(float y, float x, std::string str)
 
 int libNcurses::getKeyPress()
 {
-    return (wgetch(window));
+    int key = wgetch(window);
+
+    if (key == 27)
+        return ((int)'x');
+    return (0);
 }
 
 void libNcurses::display()
